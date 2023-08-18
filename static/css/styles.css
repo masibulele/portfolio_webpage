@@ -1,0 +1,38 @@
+nav{
+
+    background-color: #eeeeee ;
+
+
+}
+
+.nav-link{
+    font-size: 32 px;
+    font-weight: bold;
+    color: #3A98B9;
+    font: 'Allerta Stencil';
+}
+
+svg{
+    color: #3A98B9;
+
+}
+
+body{
+    background-color: #3A98B9;
+}
+h2{
+    color: aliceblue;
+    font-family: Verdana, sans-serif;
+}
+
+p{
+    color:azure;
+    text-align: justify;
+   
+}
+.sm-icons {
+    flex-direction: row;
+    color: #3A98B9;
+  }
+
+/* * { border: 1px solid black; } */
