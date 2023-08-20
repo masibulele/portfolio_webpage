@@ -6,7 +6,7 @@
     <title>Masi Madiba</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <link href="static\css\styles.css" rel="stylesheet"/>
+    <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet"/>
 </head>
 <body>
   <!-- create Nav bar -->
@@ -14,8 +14,8 @@
     <nav class="navbar  navbar-expand-sm bg-body-tertiary py-0 ">
       <div class="container-fluid ">
         <!-- logo -->
-        <a class="navbar-brand -" href="index.html">
-          <img src="static\images\Masi Logo no fill.png" alt="Masi Madiba logo" class="rounded-circle  img-thumbnail py-0" width="80" height="">
+        <a class="navbar-brand -" href="{{url_for('home')}}">
+          <img src="{{url_for('static', filename='images/Masi Logo no fill.png')}}" alt="Masi Madiba logo" class="rounded-circle  img-thumbnail py-0" width="80" height="">
         </a>
         <!-- collapsable button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +25,13 @@
         <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active " aria-current="page"href="index.html">Home</a>
+              <a class="nav-link active " aria-current="page" href="{{url_for('home')}}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="porfolio.html">Portfolio</a>
+              <a class="nav-link" href="{{url_for('portfolio_page')}}">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="{{url_for('contact_page')}}">Contact</a>
             </li>
 
           </ul>
@@ -56,14 +56,6 @@
       
 
         </div>
-
-        <!-- <div class="collapse navbar-collapse justify-content-md-center pt-5 pb-0" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link " aria-current="page" href="#">About</a>
-            <a class="nav-link" href="#">Portfolio</a>
-            <a class="nav-link" href="#">Contact</a>
-        </div>
-         -->
       
       </div>
     </nav>

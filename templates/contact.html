@@ -15,7 +15,7 @@
       <div class="container ">
         <!-- logo -->
         <a class="navbar-brand -" href="#">
-          <img src="static\images\Masi Logo no fill.png" alt="Masi Madiba logo" class="rounded-circle  img-thumbnail py-0" width="80" height="">
+          <img src="{{url_for('static', filename='images/Masi Logo no fill.png')}}" alt="Masi Madiba logo" class="rounded-circle  img-thumbnail py-0" width="80" height="">
         </a>
         <!-- collapsable button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,14 +25,14 @@
         <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="{{url_for('home')}}">Home</a>
               </li>
             <li class="nav-item">
-            <a class="nav-link" href="porfolio.html">Portfolio</a>
+            <a class="nav-link" href="{{url_for('portfolio_page')}}">Portfolio</a>
             </li>
   
             <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="contact.html">Contact</a>
+              <a class="nav-link active " aria-current="page" href="{{url_for('contact_page')}}">Contact</a>
             </li>
 
           </ul>
